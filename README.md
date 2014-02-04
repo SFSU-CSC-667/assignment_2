@@ -1,2 +1,4 @@
-assignment_2
+Assignment 2
 ============
+
+See assignment description for details.
