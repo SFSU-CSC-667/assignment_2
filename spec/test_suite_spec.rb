@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe TestObject do
   let(:test_fill) { 'i' }
   let(:test_size) { 4 }
