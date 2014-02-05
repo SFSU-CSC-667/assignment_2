@@ -11,7 +11,7 @@ describe TestObject do
     end
 
     it 'raises when the second parameter is not a number' do
-      expect{ TestObject.new('a','b') }.to raise_error
+      expect{ TestObject.new('a','b') }.to raise_error(ArgumentError)
     end
   end
 
@@ -39,6 +39,7 @@ describe TestObject do
     let(:odd_object) { TestObject.new(test_fill, 3) }
 
     it 'returns false when size is even' do
+      expect(test_object.odd?).not_to be_nil
       expect(test_object.odd?).to be_false
     end
 
