@@ -1,5 +1,4 @@
-$: << '../'
-Dir.glob('*.rb').each {|f| require f}
+require_relative '../test_object.rb'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |c|
